@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args)
+    {
+      Scanner  inscanner=new Scanner(System.in);
+      String[]names=new String[3];
+      System.out.println("enter 3name");
+      for (int i=0;i<3 ;i++) 
+      {
+        System.out.println("name"+(i+1)+":");
+        names[i]=inscanner.nextLine();
+      }
+      for (String name:names)
+      {
+        int lentgh=name.length();
+        System.out.println("name"+name+":       "+lentgh+"" );
+      } 
+    
+  }
+}
